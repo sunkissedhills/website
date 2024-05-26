@@ -1,19 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTiktok, faYoutube, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Header = () => (
   <header className="header">
-    <nav className="quick-links">
-      <ul>
-        <li><a href="#landing">Home</a></li>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
     <div className="social-links">
+      <a href="#landing">
+        <FontAwesomeIcon icon={faHome} />
+      </a>
+      <a href="#music">
+        <FontAwesomeIcon icon={faMusic} />
+      </a>
       <a href="https://www.instagram.com/sunkissed.hills/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} />
       </a>
